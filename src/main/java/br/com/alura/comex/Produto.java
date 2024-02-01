@@ -1,5 +1,7 @@
 package br.com.alura.comex;
 
+import java.util.Objects;
+
 public class Produto {
     private String nome;
     private String descricao;
@@ -44,5 +46,22 @@ public class Produto {
 
     public void setQuantidade(int quantidade) {
         this.quantidade = quantidade;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+
+        Produto produto = (Produto) obj;
+        return Double.compare(produto.precoUnitario, precoUnitario) == 0 &&
+                quantidade == produto.quantidade &&
+                nome.equals(produto.nome) &&
+                descricao.equals(produto.descricao);
     }
 }
