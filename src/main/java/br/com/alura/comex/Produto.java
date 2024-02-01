@@ -15,37 +15,20 @@ public class Produto {
         this.quantidade = quantidade;
     }
 
-    // Métodos para acessar os atributos (getters e setters)
     public String getNome() {
         return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
     }
 
     public String getDescricao() {
         return descricao;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
-
     public double getPrecoUnitario() {
         return precoUnitario;
     }
 
-    public void setPrecoUnitario(double precoUnitario) {
-        this.precoUnitario = precoUnitario;
-    }
-
     public int getQuantidade() {
         return quantidade;
-    }
-
-    public void setQuantidade(int quantidade) {
-        this.quantidade = quantidade;
     }
 
     @Override
@@ -65,7 +48,6 @@ public class Produto {
                 descricao.equals(produto.descricao);
     }
 
-    // Método para imprimir os dados do produto no console
     public void imprimirDadosDoProduto() {
         System.out.println(">> Dados do produto");
         System.out.println(":: Nome: " + nome);
@@ -74,3 +56,4 @@ public class Produto {
         System.out.println(":: Quantidade: " + quantidade);
     }
 }
+
