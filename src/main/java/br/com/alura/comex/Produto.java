@@ -64,4 +64,13 @@ public class Produto {
                 nome.equals(produto.nome) &&
                 descricao.equals(produto.descricao);
     }
+
+    // Método para imprimir os dados do produto no console
+    public void imprimirDadosDoProduto() {
+        System.out.println(">> Dados do produto");
+        System.out.println(":: Nome: " + nome);
+        System.out.println(":: Descrição: " + descricao);
+        System.out.println(":: Preço Unitário: R$" + precoUnitario);
+        System.out.println(":: Quantidade: " + quantidade);
+    }
 }
