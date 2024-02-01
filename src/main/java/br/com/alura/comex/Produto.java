@@ -8,7 +8,12 @@ public class Produto {
     private double precoUnitario;
     private int quantidade;
 
+    // Construtor que exige o nome como argumento
     public Produto(String nome, String descricao, double precoUnitario, int quantidade) {
+        if (nome == null || nome.trim().isEmpty()) {
+            throw new IllegalArgumentException("Nome do produto não pode ser nulo ou vazio.");
+        }
+
         this.nome = nome;
         this.descricao = descricao;
         this.precoUnitario = precoUnitario;
