@@ -3,7 +3,7 @@ package br.com.alura.comex;
 import java.util.Objects;
 
 public class Produto {
-    private String nome;
+    protected String nome;
     private String descricao;
     private double precoUnitario;
     private int quantidade;

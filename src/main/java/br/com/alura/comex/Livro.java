@@ -1,7 +1,7 @@
 package br.com.alura.comex;
 import br.com.alura.comex.interfaces.Identificavel;
 
-public class Livro extends Produto implements Identifical{
+public class Livro extends Produto implements Identificavel{
     private String isbn;
     private int totalPaginas;
 
