@@ -1,6 +1,7 @@
 package br.com.alura.comex;
+import br.com.alura.comex.interfaces.Identificavel;
 
-public class Livro extends Produto {
+public class Livro extends Produto implements Identifical{
     private String isbn;
     private int totalPaginas;
 
@@ -31,6 +32,11 @@ public class Livro extends Produto {
         super.imprimirDadosDoProduto();
         System.out.println(":: ISBN: " + isbn);
         System.out.println(":: Total de Páginas: " + totalPaginas);
+    }
+
+    @Override
+    public String identificar() {
+        return "Livro: Nome - " + nome + ", ISBN - " + isbn;
     }
 }
 

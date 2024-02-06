@@ -1,6 +1,7 @@
 package br.com.alura.comex;
+import br.com.alura.comex.interfaces.Identificavel;
 
-public class Cliente {
+public class Cliente implements Identificavel {
     private String nome;
     private String cpf;
     private String email;
@@ -63,6 +64,11 @@ public class Cliente {
 
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
+    }
+
+    @Override
+    public String identificar() {
+        return "Cliente: Nome - " + nome + ", CPF - " + cpf;
     }
 }
 
