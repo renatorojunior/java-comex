@@ -12,7 +12,7 @@ public class Reader {
                 int numeroDigitado = reader.nextInt();
 
                 System.out.println("Número digitado: " + numeroDigitado);
-                break;  
+                break;
             } else {
                 System.out.println("Por favor, digite um número inteiro válido.");
                 reader.next();
