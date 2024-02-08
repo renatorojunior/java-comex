@@ -21,7 +21,7 @@ public class TratamentoDeExceptions {
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Erro: Entrada inválida. Por favor, digite um número inteiro.");
-                reader.next();  
+                reader.next();
             }
         } while (true);
 
